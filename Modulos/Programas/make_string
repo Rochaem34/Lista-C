@@ -1,0 +1,8 @@
+testa_my_string: testa_my_string.o my_string.o
+	gcc -o testa_my_string testa_my_string.o my_string.o
+	
+testa_my_string.o: testa_my_string.c my_string.h
+	gcc -c testa_my_string.c
+	
+my_string.o: my_string.c
+	gcc -c my_string.c
